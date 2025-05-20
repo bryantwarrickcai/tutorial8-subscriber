@@ -7,3 +7,8 @@ b.
 The first `guest` is the username used to authenticate with the AMQP broker. The second `guest` is the password for authentication. However, these are both default credentials, and should not be used in actual production.
 
 The `localhost` is the host address where the AMQP broker is running. `localhost` refers to the local machine and translates to `127.0.0.1`. `5672` is the default port number used for unencrypted AMQP connections. For encrypted connections with SSL/TLS, the port is `5671` instead.
+
+## RabbitMQ screenshot for slow subscriber
+![RabbitMQ screenshot for slow subscriber](rabbitmq_slow_subscriber.png)
+
+In this case, I ran the publisher app five times (in total, 25 messages are sent). The total number of queued messages in my case is 15. Only 10 messages can be processed at once in the broker, so the rest of messages goes into the queue and waits until the messages have already been processed.
