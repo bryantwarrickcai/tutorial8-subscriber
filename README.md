@@ -1,5 +1,5 @@
-## Module 9
-### Question 7
+# Module 9 - Subscriber
+## Question 7
 a.  
 AMQP (Advanced Message Queuing Protocol) is an open-standard messaging protocol that enabled applications and systems to communicate via a message broker. It is designed to be a reliable, asynchronous, and secure method of exchanging messages between systems. This protocol also ensures that messages are delivered even in the case of network or system failures.
 
